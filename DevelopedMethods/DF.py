@@ -1,7 +1,16 @@
-from .imports import * # import np, pd, sklearn fn's
+import os
 
-# df = pd.read_csv('../data/fraud-detection/fraudTest.csv') # <--- relative path only works if u ran: /opt/anaconda3/bin/jupyter_mac.command  @  project root
-df = pd.read_csv('~/proj/py/notebook-playground/notebooks/4662/CS4662_Project/data/heart-failure-clinical-data/heart_failure_clinical_records_dataset.csv') # hardcoded. can also use kaggle notebook path: /kaggle/input/fraud-detection/fraudTrain.csv (if using online kaggle notebook)
+from DevelopedMethods.imports import * # import np, pd, sklearn fn's
+
+# dynamic relative path — hack
+current_file_dir = os.path.dirname(os.path.abspath(__file__))
+root_dir_name = os.path.abspath(os.path.join(current_file_dir, '..'))
+def relativeHack(callee_directory, buildup=''): # return ellipsis
+    if (callee_directory == root_dir_name):
+        return buildup if buildup else "."
+    return relativeHack(os.path.dirname(callee_directory.rstrip('/')), buildup + "../")
+
+df = pd.read_csv(relativeHack(os.getcwd()) + '/data/heart-failure-clinical-data/heart_failure_clinical_records_dataset.csv') # relative path only works if u ran: /opt/anaconda3/bin/jupyter_mac.command  @  project root (or use an IDE instead)
 
 # df attributes:
 # ['T', 'abs', 'add', 'add_prefix', 'add_suffix', 'agg', 'aggregate', 'align', 'all',

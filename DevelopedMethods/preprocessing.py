@@ -1,5 +1,5 @@
 # Data Exploration.ipynb —— all cells pasted, minus graphs & logging   --so just data preprocessing lines
-from .DF import * # import np, pd, sklearn fn's --and df (https://www.kaggle.com/datasets/kartik2112/fraud-detection/)
+from DevelopedMethods.DF import * # import np, pd, sklearn fn's --and df (https://www.kaggle.com/datasets/kartik2112/fraud-detection/)
 
 # make exploration easier, drop redundant columns:
 
