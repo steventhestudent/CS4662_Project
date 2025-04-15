@@ -6,7 +6,7 @@ from DevelopedMethods.imports import * # import np, pd, sklearn fn's
 # eg: "../data/heart-failure-clinical-data/heart_failure_clinical_records_dataset.csv" <--- no error in DF.py. but ../Data Exploration.ipynb will error:        FileNotFoundError: [Errno 2] No such file or directory: '../data/heart-failure-clinical-data/heart_failure_clinical_records_dataset.csv'
 # so, we avoid, with this:
 current_file_dir = os.path.dirname(os.path.abspath(__file__)) # this script's path
-dataset_path = os.path.join(current_file_dir, "..", "data", "heart-failure-clinical-data", "heart_failure_clinical_records_dataset.csv")
+dataset_path = os.path.join(current_file_dir, "..", "data", "heart-failure-clinical-data", "heart_failure_clinical_records_dataset.csv") # current_file_dir + ../data/heart-failure-clinical-data/heart_failure_clinical_records_dataset.csv
 
 # Read the CSV file
 df = pd.read_csv(dataset_path)
