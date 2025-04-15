@@ -18,7 +18,7 @@ from sklearn.datasets import make_blobs
 from sklearn.decomposition import PCA # (principal component analysis (unsupervised dimensionality reduction))
 
 # misc.
-# from imblearn.over_sampling import SMOTE
+from imblearn.over_sampling import SMOTE
 
 # plotting
 import matplotlib.pyplot as plt                                       # matplotlib. (graphs/plots)

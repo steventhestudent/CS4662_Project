@@ -7,7 +7,7 @@ Implementation: [heart-failure-prediction-svm-and-ann](https://www.kaggle.com/co
 1. ```git clone git@github.com:steventhestudent/CS4662_Project.git```
 
 # Install
-1. 
+1. ...
 
 
 ## Troubleshoot (Import Error)
