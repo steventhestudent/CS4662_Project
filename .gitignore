@@ -1,3 +1,4 @@
+Reports/~*.docx
 # since our dataset is so small (and data directory will stagnate), we track it
 #data/*/*.csv
 
