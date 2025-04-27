@@ -1,5 +1,5 @@
-Reports/*/~*.docx
-Reports/*/~*.pptx
+Reports/**/~*.docx
+Reports/**/~*.pptx
 # since our dataset is so small (and data directory will stagnate), we track it
 #data/*/*.csv
 
