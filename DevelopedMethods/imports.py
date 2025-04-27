@@ -19,10 +19,11 @@ from sklearn.decomposition import PCA # (principal component analysis (unsupervi
 from sklearn.manifold import TSNE # PCA alternative (we use for SMOTE noise detection in tight clusters)
 
 # misc.
-from imblearn.over_sampling import SMOTE
+from imblearn.over_sampling import SMOTE # imbalance handling ('synthetic minority oversampling technique')
 
 # plotting
 import matplotlib.pyplot as plt                                       # matplotlib. (graphs/plots)
+import matplotlib.cm as cm                                            # generate colors (ie: for loop of auc/roc curves)
 import seaborn as sns                                                 # matplotlib alternative
 
 # defaults
