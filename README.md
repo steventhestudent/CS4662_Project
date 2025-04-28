@@ -7,7 +7,8 @@ Implementation: [heart-failure-prediction-svm-and-ann](https://www.kaggle.com/co
 1. ```git clone git@github.com:steventhestudent/CS4662_Project.git```
 
 # Install
-1. ...
+1. uncomment correct keras imports (in DevelopedMethods/imports.py)
+2. may need to ```pip install imblearn``` (SMOTE)
 
 
 ## Troubleshoot (Import Error)
